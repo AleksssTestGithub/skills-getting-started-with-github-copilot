@@ -4,7 +4,7 @@ from src.app import app
 
 client = TestClient(app)
 
-
+#A comment
 def test_unregister_participant_removes_email_and_keeps_activity_list_consistent():
     # start with a known participant list
     response = client.get("/activities")
